@@ -5,7 +5,7 @@ alias ls="ls -G"
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # NVM
-. ~/nvm/nvm.sh
+. ~/Developer/nvm/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 
