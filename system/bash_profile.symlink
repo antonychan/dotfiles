@@ -1,7 +1,15 @@
+export TERM=screen
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=1
 alias ls="ls -G"
 
+######################################
+# Todo.txt
+######################################
+alias t='sh /usr/local/bin/todo.sh'
+
+
+alias yahoo='sh ~/.ssh/yahoo_proxy.sh'
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # NVM
