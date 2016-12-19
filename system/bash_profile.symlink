@@ -12,11 +12,6 @@ alias t='sh /usr/local/bin/todo.sh'
 alias yahoo='sh ~/.ssh/yahoo_proxy.sh'
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# NVM
-. ~/Developer/nvm/nvm.sh
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
-
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
@@ -34,3 +29,8 @@ GREEN="\[\033[01;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
 PS1="$GREEN\u@\h$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
+
+#@yahoo specific
+alias viewarmgoal='ssh viewarmgoal.santamonica.corp.yahoo.com'
+alias lunchbunch='ssh lunchbunch.corp.gq1.yahoo.com'
+[[ -s /Users/antonyc/.nvm/nvm.sh ]] && . /Users/antonyc/.nvm/nvm.sh # This loads NVM
