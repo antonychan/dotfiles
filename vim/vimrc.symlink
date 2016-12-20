@@ -1,6 +1,16 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" The better way to do indentation
+" http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" " when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" " On pressing tab, insert 4 spaces
+set expandtab
+
 syntax on
 
 set clipboard=unnamed
@@ -23,6 +33,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+Plugin 'valloric/youcompleteme'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
