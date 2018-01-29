@@ -34,3 +34,6 @@ PS1="$GREEN\u@\h$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 alias viewarmgoal='ssh viewarmgoal.santamonica.corp.yahoo.com'
 alias lunchbunch='ssh lunchbunch.corp.gq1.yahoo.com'
 [[ -s /Users/antonyc/.nvm/nvm.sh ]] && . /Users/antonyc/.nvm/nvm.sh # This loads NVM
+
+# Homebrew
+export PATH=/usr/local/bin:$PATH

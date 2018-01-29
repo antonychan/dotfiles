@@ -52,10 +52,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export GOPATH=$HOME
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/antonyc/go/bin"
-# export GOROOT=$HOME
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$PATH:/usr/local/go/bin
 
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -89,5 +89,25 @@ alias hostip="ip route show 0.0.0.0/0 | grep -Eo 'via \S+' | awk '{ print \$2 }'
 alias pweb="ssh -i ~/.ssh/antony-macbook.pem ubuntu@52.27.122.23"
 alias eskape="ssh -i ~/.ssh/eskaperoomk.pem ec2-user@52.27.47.73"
 alias pwebeb="ssh -i ~/.ssh/personal-web-ecs.pem ec2-user@52.24.138.68"
-alias chanreaction="ssh -i ~/.ssh/antony-macbook-n-california.pem ubuntu@ec2-54-153-111-32.us-west-1.compute.amazonaws.com
-"
+alias chanreaction="ssh -i ~/.ssh/antony-macbook-n-california.pem ubuntu@ec2-54-153-111-32.us-west-1.compute.amazonaws.com"
+alias sg="ssh -i ~/.ssh/antonysg.pem ec2-user@ec2-54-169-185-203.ap-southeast-1.compute.amazonaws.com"
+
+# USENET VPN
+alias vpn="sudo openvpn --daemon --config ~/UNE-Miami4.ovpn"
+alias killvpn="pkill -2 -f UNE-Miami4.ovpn"
+
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+
+# yarn
+export PATH="$PATH:`yarn global bin`"
+
+# Virtualenv/VirtualenvWrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
+source $(dirname $(gem which colorls))/tab_complete.sh
+alias lc='colorls -lA --sd'
+
+
+# TMUX
+alias tmux="TERM=screen-256color-bce tmux"

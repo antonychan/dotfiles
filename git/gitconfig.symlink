@@ -1,5 +1,5 @@
 [user]
-	email = antonyc@yahoo-inc.com
+	email = achan0327@gmail.com
 	name = Antony Chan
 [color]
 # ui = true is a superset of all the more specific color options
@@ -253,6 +253,7 @@
 [push]
 	default = matching
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

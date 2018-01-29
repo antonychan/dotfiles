@@ -2,3 +2,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source $HOME/.bash_profile
 export NVM_DIR="/Users/antonyc/Developer/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH=/usr/local/bin:$PATH
