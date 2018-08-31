@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Check for Homebrew,
+# Install if we don't have it
+if test ! $(which brew); then
+  echo "Installing homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+# Update homebrew recipes
+echo "Updating homebrew..."
+brew update
+
+echo "Installing Git..."
+brew install git
+
+echo "Git config"
+
+brew install bat
+brew install diff-so-fancy
+brew install fzf

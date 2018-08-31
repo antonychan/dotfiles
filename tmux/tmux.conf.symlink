@@ -25,3 +25,8 @@ run '~/.tmux/plugins/tpm/tpm'
 set-option -g mouse on
 
 set -g default-terminal "screen-256color"
+
+set-window-option -g window-status-current-bg red
+
+set-option -g pane-active-border-fg blue
+

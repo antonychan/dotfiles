@@ -111,3 +111,8 @@ alias lc='colorls -lA --sd'
 
 # TMUX
 alias tmux="TERM=screen-256color-bce tmux"
+
+alias cat='bat'
+
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
