@@ -116,3 +116,6 @@ alias cat='bat'
 
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

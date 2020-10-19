@@ -19,3 +19,5 @@ echo "Git config"
 brew install bat
 brew install diff-so-fancy
 brew install fzf
+
+$(brew --prefix)/opt/fzf/install
